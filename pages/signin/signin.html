@@ -1,0 +1,73 @@
+<!-- this page contains a form to facilitate user to signin -->
+<!-- make sure to restrict with the global styles theme -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign In</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../assets/css/signin.css" />
+    <link rel="stylesheet" href="../../assets/css/index.css" />
+  </head>
+  <body>
+    <div class="nav flex">
+      <div>Logo Here</div>
+      <div class="nav-right">
+        <a href="../../index.html" class="nav-link">Home</a>
+        <a href="./signin.html" class="nav-link"> Signin</a>
+        <a href="../signup/signup.html" class="nav-link">Signup</a>
+        <a href="../contact/contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+
+    <form
+      accept="#"
+      method="POST"
+      autocomplete="off"
+      class="formsignin"
+      id="formsignin"
+    >
+      <div class="container">
+        <div class="center">
+          <h2>Sign In</h2>
+          <p>Please fill in this form to log in.</p>
+        </div>
+
+        <div class="form-item">
+          <label for="email"><b>Email</b></label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            id="emailField"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+            id="pswField"
+          />
+        </div>
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </div>
+
+      <div class="container">
+        <button type="button" class="cancelbtn">
+          <a class="nav-link" href="../../index.html">Cancel</a>
+        </button>
+        <span class="psw"><a class="nav-link">Forgot password?</a></span>
+      </div>
+    </form>
+    <script src="../../assets/js/signin.js"></script>
+  </body>
+</html>
