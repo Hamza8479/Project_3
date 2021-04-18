@@ -1,0 +1,83 @@
+<!-- this page contains a form to facilitate user to signup -->
+<!-- make sure to restrict with the global styles theme -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../assets/css/signup.css" />
+    <link rel="stylesheet" href="../../assets/css/index.css" />
+    
+  <body>
+    <div class="nav flex">
+      <div>Logo Here</div>
+      <div class="nav-right">
+        <a href="../../index.html" class="nav-link">Home</a>
+        <a href="../signin/signin.html" class="nav-link"> Signin</a>
+        <a href="./signup.html" class="nav-link">Signup</a>
+        <a href="../contact/contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+    <form accept="#" method="POST" autocomplete="off" class="formsignup" id="formsignup">
+      <div class="container">
+        <div class="center">
+
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        </div>
+
+        <div class="form-item">
+        <label for="name"><b>Name</b></label>
+        <input id="nameField" type="text" placeholder="Enter Name" name="name" required />
+        </div>
+        <div class="form-item">
+        <label for="email"><b>Email</b></label>
+        <input id="emailField" type="text" placeholder="Enter Email" name="email" required />
+      </div>
+        <div class="form-item">
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+          id="pswField"
+        />
+      </div>
+        <div class="form-item">
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="psw-repeat"
+          required
+          id="pswRepeatField"
+        />
+      </div>
+        <div class="form-item">
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Remember me
+        </label>
+      </div>
+        <p>
+          By creating an account you agree to our
+          <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+        </p>
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+
+    <script src="../../assets/js/signup.js"></script>
+  </body>
+</html>
